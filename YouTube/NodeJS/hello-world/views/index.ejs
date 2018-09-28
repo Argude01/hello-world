@@ -1,0 +1,13 @@
+<% include partials/head.ejs %>
+    <h1>Test  <%= title %></h1>
+    <pre><%= accounts[0].socialNetwork %> <%= accounts[1].socialNetwork %> <%= accounts[2].socialNetwork %></pre>
+    <br>
+    <h1>Using a for loop with Ejs (view engine)</h1>
+    <ol></ol>
+    <% for(var i=0; i<accounts.length; i++) {%>  
+        
+        <li><%= accounts[i].socialNetwork %></li>
+        
+    <% } %>
+    </ol>    
+<% include partials/footer.ejs %>
